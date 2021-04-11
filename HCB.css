@@ -64,6 +64,10 @@ body{
     color: #262626;
     font-family: Varela Round;
 }
+#menu-area ul li a:hover{
+    color: rgb(138, 126, 110);
+    transition: all 0.5s ease;
+}
 #menu-area ul li{
     padding: 5px;
 }
@@ -169,14 +173,21 @@ div.middiv{
 .inner1{
     height: 100%;
     width:300px;
-    background-color: #807e69;
+    /*background-color: #807e69;*/
     display:flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 .contitle .inner1 h2{
     font-size: 22px;
     font-family: Varela Round;
+}
+.inner1A{
+    width: 50px;
+    height: 2px;
+    background-color: aqua;
+    border-radius: 30%;
 }
 
 
@@ -199,11 +210,12 @@ div.middiv{
 .box{
     width: 200px;
     height: 315px;
-    background-color: rgb(241, 237, 230);
+    background-color: whitesmoke;
     margin:20px;
     font-size:50px;
     text-align:center;
 }
+
 .container .box p{
     font-size: 15px;
     font-family: Varela Round;
@@ -211,6 +223,50 @@ div.middiv{
 }
 .box a{
     text-decoration: none;
-    color:black;
+    color:rgb(97, 90, 90);
 }
 
+.container1{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    background: whitesmoke;
+    width:270px;
+    height: 400px;
+    margin: 10px;
+    border-radius:15px ;
+}
+.card-image{
+    background-color:aqua;
+    height: 170px;
+    margin-bottom:15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.car-1 {
+    background-image: url(imagens/covid.jpg);
+}
+.car-2{
+    background-image: url(imagens/hcb-equipment.jpg);
+}
+.car-3{
+    background-image: url(imagens/hcb-surgery.jpg);
+}
+.card a {
+    background-color: rgba(189, 168, 168, 0.26);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    display: block;
+    margin: 20px 50px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: Varela Round;
+    font-size: small;
+}
+.card a :hover{
+    background-color: aqua;
+}
