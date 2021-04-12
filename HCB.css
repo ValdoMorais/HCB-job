@@ -302,9 +302,35 @@ div.middiv{
     background-color: aqua;
 }
 footer{
-    margin:0;
-    background-color: aqua;
-    position: relative;
+    margin:0px;
+    /*position: relative;*/
     width: 100%;
-    height: 100ox;
+   
+
+}
+
+.content1{
+    width:100%;
+    height: auto;
+    background-color:rgb(41, 38, 38);
+    display:flex;
+    flex-direction: row;
+
+
+}
+.fter{
+    width: 30%;
+    height: auto;
+    padding-top: 80px;
+
+}
+.Cbox{
+ padding-top: 90px;
+    width: 30%;
+    text-align: center;
+}
+.right-box{
+    padding-top: 90px;
+    width: 40%;
+   
 }
