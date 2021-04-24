@@ -2,7 +2,6 @@
     padding: 0;
     margin:0;
     box-sizing:border-box;
-
 }
 body{
     margin: 0;
@@ -21,8 +20,6 @@ body{
     top:0;
     left: 0;
     transition:background 0.5s;
-
-
 }
 @keyframes animate {
     0%{
@@ -71,6 +68,9 @@ body{
 #menu-area ul li{
     padding: 5px;
 }
+#menu-area ul li:hover{
+    background-color: rgb(138, 126, 110);
+}
 .banner-area{
     -webkit-background-size: cover;
     background-size:cover;
@@ -89,7 +89,7 @@ body{
     text-align:center;
 }
 .banner-text h2{
-    font-family:Varela Round;
+    font-family:'Varela Round';
     font-size:40px;
 
 }
@@ -191,8 +191,6 @@ div.middiv{
     border-radius: 10px;
 }
 
-
-
 .container{
     width: 100%;
     height:auto;
@@ -207,7 +205,7 @@ div.middiv{
 .container .flexTitle{
     font-size: 20px;
     text-align: center;
-    font-family: Varela Round;
+    font-family: 'Varela Round';
 }
 .box{
     width: 200px;
@@ -215,14 +213,13 @@ div.middiv{
     background-color: whitesmoke;
     margin:20px;
     font-size:50px;
-    text-align:center;
+    /*text-align:center;*/
+    text-align: justify;
 }
-
 .container .box p{
     font-size: 15px;
     font-family: Varela Round;
-    margin-top: 10px;   
-     
+    margin-top: 10px;
 }
 .box a{
     text-decoration: none;
@@ -262,6 +259,7 @@ div.middiv{
     height:auto;
     margin: 10px;
     border-radius:15px ;
+    text-align: justify;
 }
 .card h2{
     font-family: Varela Round;
@@ -317,6 +315,10 @@ footer{
     flex-direction: row;
 
 
+}
+.left-box{
+    text-align: justify;
+    font-family: 'varela round';
 }
 .fter{
     width: 30%;
