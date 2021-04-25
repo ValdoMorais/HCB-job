@@ -69,7 +69,7 @@ li:hover{
     transition: all .5s ease; 
 }
 li:hover{
-border-radius: 50px;    
+border-radius: 10px;    
 }
 .banner-area{
     -webkit-background-size: cover;
@@ -191,8 +191,8 @@ div.middiv{
     font-family: Varela Round;
 }
 .inner1A{
-    width: 50px;
-    height: 3px;
+    width: 90px;
+    height: 5px;
     background-color: aqua;
     border-radius: 10px;
 }
@@ -216,11 +216,14 @@ div.middiv{
 .box{
     width: 200px;
     height: 315px;
-    background-color: whitesmoke;
+    background-color: rgb(204, 192, 250);
     margin:20px;
     font-size:50px;
     /*text-align:center;*/
     text-align: justify;
+}
+.box:hover{
+    background-color: rgb(84, 81, 250);
 }
 .container .box p{
     font-size: 15px;
