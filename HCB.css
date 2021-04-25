@@ -61,15 +61,15 @@ body{
     color: #262626;
     font-family: Varela Round;
 }
-#menu-area ul li a:hover{
-    color: rgb(138, 126, 110);
-    transition: all 0.5s ease;
-}
 #menu-area ul li{
     padding: 5px;
 }
-#menu-area ul li:hover{
-    background-color: rgb(138, 126, 110);
+li:hover{
+    border: 1px solid rgb(17, 17, 17);
+    transition: all .5s ease; 
+}
+li:hover{
+border-radius: 50px;    
 }
 .banner-area{
     -webkit-background-size: cover;
@@ -93,16 +93,22 @@ body{
     font-size:40px;
 
 }
-.banner-text a{
+
+#dv a{
     text-decoration:none;
-    background:#262626;
-    color:#fff;
+    background:#09090e;
+    color:rgb(250, 249, 249);
     padding:15px 30px;
     display:inline-block;
     margin-top:20px;
     border-radius:50px;
     font-family: Varela Round;
+   
 }
+#dv a:hover{
+    background-color: transparent;
+}
+
 .wrapper{
     padding: 70px;
 }
