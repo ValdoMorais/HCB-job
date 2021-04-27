@@ -8,6 +8,10 @@ body{
     padding: 0;
     font-family: poppins;
 }
+h2, p{
+    font-family: 'Varela Round';
+    text-align: justify;
+}
 #menu-area{
     display: -webkit-flex;
     display: -moz-flex;
@@ -39,7 +43,7 @@ body{
     }
 }
 
-#menu-area .logo img{
+#menu-area .logo .img1{
     height: 70px;
     transition:height 0.5s;
     padding-top:10px;
@@ -197,7 +201,7 @@ div.middiv{
     border-radius: 10px;
 }
 
-.container{
+.containerr{
     width: 100%;
     height:auto;
     background: whitesmoke;
@@ -208,7 +212,7 @@ div.middiv{
     flex-flow: wrap;
     margin-top:20px;
 }
-.container .flexTitle{
+.containerr .flexTitle{
     font-size: 20px;
     text-align: center;
     font-family: 'Varela Round';
@@ -225,7 +229,7 @@ div.middiv{
 .box:hover{
     background-color: rgb(84, 81, 250);
 }
-.container .box p{
+.containerr .box p{
     font-size: 15px;
     font-family: Varela Round;
     margin-top: 10px;
@@ -261,10 +265,12 @@ div.middiv{
     margin-top: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    background-color: #333;
 }
 .card{
     background: whitesmoke;
-    width:270px;
+    width:280px;
     height:auto;
     margin: 10px;
     border-radius:15px ;
@@ -286,12 +292,33 @@ div.middiv{
 }
 .car-1 {
     background-image: url(imagens/covid.jpg);
+    
+}
+.car-1:hover{
+    box-shadow: 5px  5px 15px rgba(0,0,0,0.9);
+    border-radius: 0px;
+    transition: 0.3s;
+    height: 190px;
+   
+   
 }
 .car-2{
     background-image: url(imagens/hcb-equipment.jpg);
 }
+.car-2:hover{
+    box-shadow: 5px  5px 15px rgba(0,0,0,0.9);
+    border-radius: 0px;
+    transition: 0.3s;
+    height: 190px;
+}
 .car-3{
     background-image: url(imagens/hcb-surgery.jpg);
+}
+.car-3:hover{
+    box-shadow: 5px  5px 15px rgba(0,0,0,0.9);
+    border-radius: 0px;
+    transition: 0.3s;
+    height: 190px;
 }
 .card a {
     background-color: rgba(189, 168, 168, 0.26);
@@ -305,8 +332,9 @@ div.middiv{
     font-family: Varela Round;
     font-size: small;
 }
-.card a :hover{
+.card a:hover{
     background-color: aqua;
+    transition: 0.3s;
 }
 footer{
     margin:0px;
@@ -322,7 +350,6 @@ footer{
     background-color:rgb(41, 38, 38);
     display:flex;
     flex-direction: row;
-
 
 }
 .left-box{
@@ -343,5 +370,102 @@ footer{
 .right-box{
     padding-top: 90px;
     width: 40%;
-   
+}
+/*parte das doações*/
+
+
+.container{
+    max-width: 100%;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    background-color: rgb(175, 172, 169);
+
+    grid-template-areas: 
+    "sidenav item item"
+    "sidenav item item"
+    "sidenav item item"
+    "footer footer footer";
+}
+.container img{
+    width: 100%;
+    border-radius: 60px;
+}
+
+.container img:hover{
+    border-radius: 10px;
+    transition: 0.3s ;
+}
+.sidenav{
+    max-width: 300px;
+    min-width:250px;
+    height: 900px;
+
+    background-color: #333;
+    border-radius: 20px;
+
+    grid-area: "sidenav";
+    grid-row: sidenav;
+}
+
+.item{
+    margin-top: 10px;
+    max-width: 300px;
+    min-width: 250px;
+    height: 350px;
+    box-shadow: 5px  5px 5px rgba(0,0,0,0.9);
+    background-color: rgba(211, 208, 208, 0.561);
+    border-radius: 15px;
+    opacity: 100%;
+    grid-area: "item";
+}
+
+.item:hover{
+    transition: 0.3s;
+    opacity:100%;
+}
+
+.footer{
+    width: auto;
+    height: 300px;
+
+    background-color: #333;
+    border-radius:20px;
+
+    grid-area: "footer";
+    grid-column: footer;
+}
+
+@media (max-width: 820px){
+    .container{
+        grid-template-areas:
+        "sidenav item"
+        "sidenav item"
+        "sidenav item"
+        "sidenav item"
+        "sidenav item"
+        "sidenav item"
+        "footer footer"
+         ;
+    }
+
+}
+
+@media (max-width: 520px){
+    .sidenav{
+        height: 200px;
+    }
+    .container{
+        grid-template-areas:
+        "sidenav"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item"
+        "footer";
+    }
 }
