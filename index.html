@@ -51,8 +51,16 @@
         <div class="box"><h6 class="flexTitle"><a href="#" class="flexlink">Medicina Legal</a></Medicina></h6><p>O Serviço de Medicina Legal
              e Seguros do Hospital Central de Maputo, 
         é um serviço com características próprias que tem por objectivo auxiliar a esfera do Direito,
-         sem a qual não se concebe uma correcta administração da Justiça. Surgiu da necessidade de solucionar questões judiciais ou<a href="#">…Ler mais</a></p></div>
-        <div class="box"><h6 class="flexTitle"><a href="#" class="flexlink">Anatomia patológica</a></h6><p>O Serviço de Anatomia Patológica 
+         sem a qual não se concebe uma correcta administração da Justiça. Surgiu da necessidade de solucionar questões judiciais ou<a id="lerrma" href="javascript:;" onclick="abrir('posiciona')">…Ler mais</a></p></div>
+         
+    <div id="posiciona"> 
+	    <div id="fechar" align=right><a href="javascript:fechar();">FECHAR</a></div> <p>
+	        Sou flutuante! blalalalalfasfsfslfslflsalflslflsflslflaslfslfls</p></a>
+    </div>
+	
+
+
+        <div class="box" id="box1"><h6 class="flexTitle"><a href="#" class="flexlink">Anatomia patológica</a></h6><p>O Serviço de Anatomia Patológica 
             (SAP) é responsável pela realização
              do estudo morfológico de órgãos, tecidos e células de doentes vivos  (através de amostras obtidas por biópsias, peças cirúrgicas ou colheita de células de vários tipos), ou de falecidos por doença (através da autópsia) <a href="#">…Ler mais</a></p></div>
         <div class="box"><h6 class="flexTitle"><a href="#" class="flexlink">Laboratório de análises clinicas</a></h6><p>O Laboratório de
@@ -63,7 +71,7 @@
         <div class="box"><h6 class="flexTitle"><a href="#">
             Urgências de Adultos (Ambulatório, Traumatologia, SO)</a></h6><p>O Serviço de Urgência de Adultos do Hospital Central de Maputo, 
             é um serviço vocacionado ao atendimento de doentes de todos os foros de carácter <a href="#">…Ler mais</a></p></div>
-        <div class="box"><h6 class="flexTitle"><a href="#">Cuidados Intensivos</a></h6><p>A Unidade de Cuidados Intensivos (U.C.I) é um serviço localizado 
+        <div class="box" ><h6 class="flexTitle"><a href="#">Cuidados Intensivos</a></h6><p>A Unidade de Cuidados Intensivos (U.C.I) é um serviço localizado 
             dentro do Serviço de Urgências que admite pacientes críticos em condições fisiopatológicas que ameaçam a <a href="#">…Ler mais</a></p></div>
         <div class="box"><h6 class="flexTitle"><a href="#">Radiologia</a></h6><p>O Serviço de Radiologia e Imagiologia é uma área médica dedicada ao auxílio diagnostico, 
             tratamento e intervenção na base de várias técnicas de obtenção de imagem e oferece exames <a href="#">…Ler mais</a></p></div>
@@ -72,7 +80,7 @@
         </div>
         <div class="newsdiv">
             <div class="newsindiv">
-                <h2><a id="imprensa"></a>NOTÍCIAS</h2>
+                <h2><a id="imprensa"></a>Noticias</h2>
                 <div class="underline">
 
                 </div>
@@ -126,7 +134,61 @@
         <div class ="item"><img  class="img" src="imagens/Oftalmologia.gif" alt=""><p>item</p></div>
         <div class ="footer"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit a inventore sapiente doloribus iure eos dolores magnam, eveniet similique ab possimus. Perspiciatis magni inventore error sequi voluptas accusamus saepe nisi quos, impedit quas sunt, cum aperiam soluta, corporis voluptatem repudiandae suscipit iste omnis beatae reprehenderit quidem at. Vel, est numquam.</p></div>
     </section><br><br>
-    
+
+    <!--contactos part-->
+    <div class="newsdiv">
+        <div class="newsindiv">
+            <h2><a id="imprensa"></a>Contactos</h2>
+            <div class="underline">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="containercont">
+          <div class="text">
+  Contacte nos</div>
+  <form action="#">
+          <div class="form-row">
+            <div class="input-data">
+              <input type="text" required>
+              <div class="underline">
+  </div>
+  <label for="">First Name</label>
+            </div>
+  <div class="input-data">
+              <input type="text" required>
+              <div class="underline">
+  </div>
+  <label for="">Last Name</label>
+            </div>
+  </div>
+  <div class="form-row">
+            <div class="input-data">
+              <input type="text" required>
+              <div class="underline">
+  </div>
+  <label for="">Email Address</label>
+            </div>
+  
+            <div class="input-data textarea">
+  <!-- Due to more textarea tag I got an error.. SO I changed the name of texarea tag into changeit. Replace the changeit text/tag to textarea-->
+              <textarea rows="8" cols="80" required></textarea> 
+              <br />
+  <div class="underline">
+  </div>
+  <label for="">Write your message</label>
+            
+  <div class="form-row submit-btn">
+            <div class="input-data">
+              <div class="inner"></div>
+              <input type="submit" value="send">
+            </div>
+          </div>
+        </form>
+      </div>
+      </div><br><br>
      
             <script>
                 window.addEventListener("scroll", function(){
@@ -138,6 +200,12 @@
                             menuArea.classList.remove("cus-nav")
                         }
                 })
+                function abrir(id){
+                    document.getElementById(id).style.display="block";
+                }
+                function fechar(id){
+                    document.getElementById("posiciona").style.display="none";
+                }
             </script>
         </div>
     </div>
@@ -180,22 +248,7 @@
             </div>
                      
             <div class="right-box">
-                <h2>Contact us</h2>
-                <br>
-                <div class="content">
-                    <form action="#">
-                        <div class="email"> 
-                            <div class="text"> Email *</div>
-                                <input type="text" required>
-                        </div>
-                        <div class="msg">
-                            <div class="text"> Message *</div>
-                            <textarea cols="50" rows="3"></textarea>
-                        </div>
-                        <div class="btn">
-                            <button type="submit"> Send</button>
-                        </div>
-                    </form>
+                    
                 </div>
             </div>
         </div>   

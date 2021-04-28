@@ -205,7 +205,9 @@ div.middiv{
     width: 100%;
     height:auto;
     background: whitesmoke;
+    /*background-image: radial-gradient(circle at 19.75% 58.11%, #f1d65f 0, #e2db61 5.56%, #d3df66 11.11%, #c3e36c 16.67%, #b2e775 22.22%, #a0ea7f 27.78%, #8dec8b 33.33%, #78ef98 38.89%, #5ef1a6 44.44%, #3cf2b5 50%, #00f3c4 55.56%, #00f4d4 61.11%, #00f4e3 66.67%, #00f4f3 72.22%, #00f4ff 77.78%, #00f3ff 83.33%, #00f2ff 88.89%, #00f0ff 94.44%, #00eeff 100%);*/
     /*add flexbox style*/
+    background: -webkit-linear-gradient(right, #56d8e4, #e75531, #56d8e4, #ec5a35);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -220,23 +222,41 @@ div.middiv{
 .box{
     width: 200px;
     height: 315px;
-    background-color: rgb(204, 192, 250);
+    
+    /*background-color: rgb(203, 198, 223);*/
     margin:20px;
     font-size:50px;
     /*text-align:center;*/
     text-align: justify;
 }
 .box:hover{
-    background-color: rgb(84, 81, 250);
+    /*background-color: rgb(84, 81, 250);*/
+    background-image: radial-gradient(circle at 19.75% 58.11%, #f1d65f 0, #e2db61 5.56%, #d3df66 11.11%, #c3e36c 16.67%, #b2e775 22.22%, #a0ea7f 27.78%, #8dec8b 33.33%, #78ef98 38.89%, #5ef1a6 44.44%, #3cf2b5 50%, #00f3c4 55.56%, #00f4d4 61.11%, #00f4e3 66.67%, #00f4f3 72.22%, #00f4ff 77.78%, #00f3ff 83.33%, #00f2ff 88.89%, #00f0ff 94.44%, #00eeff 100%);
 }
 .containerr .box p{
     font-size: 15px;
     font-family: Varela Round;
     margin-top: 10px;
 }
+
 .box a{
     text-decoration: none;
     color:rgb(97, 90, 90);
+}
+
+#posiciona{
+    position:absolute;
+    left: 50%;
+    top:50%;
+    width: 70%;
+    height: 300px;
+    margin-left: -520px;
+    margin-top: -125px;
+    top: 1000px;
+    background-color: green;
+    text-align: center;
+    z-index: 1000;
+    display: none;
 }
 /*em cima da flexbox de noticias*/
 .newsdiv{
@@ -266,8 +286,9 @@ div.middiv{
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    background-color: #333;
+    background: -webkit-linear-gradient(right, #56d8e4, #e75531, #56d8e4, #ec5a35);
 }
+
 .card{
     background: whitesmoke;
     width:280px;
@@ -382,7 +403,8 @@ footer{
     display: grid;
     grid-gap: 20px;
     justify-content: center;
-    background-color: rgb(175, 172, 169);
+   /* background-color: rgb(175, 172, 169);*/
+    background: -webkit-linear-gradient(right, #a8dde2, #6f6b70, #a8c4c7, #dabae9);
 
     grid-template-areas: 
     "sidenav item item"
@@ -417,7 +439,8 @@ footer{
     min-width: 250px;
     height: 350px;
     box-shadow: 5px  5px 5px rgba(0,0,0,0.9);
-    background-color: rgba(211, 208, 208, 0.561);
+   /* background-color: rgba(211, 208, 208, 0.561);*/
+    background: -webkit-linear-gradient(right, #56d8e4, #d38af5, #56d8e4, #01cfea);
     border-radius: 15px;
     opacity: 100%;
     grid-area: "item";
@@ -430,7 +453,7 @@ footer{
 
 .footer{
     width: auto;
-    height: 300px;
+    height: 250px;
 
     background-color: #333;
     border-radius:20px;
@@ -469,3 +492,151 @@ footer{
         "footer";
     }
 }
+/*contacts area*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'varela round'
+  }
+  
+  .body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    padding: 40px;
+    background-color: white;
+    /*background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);*/
+  }
+  .containercont{
+    max-width: 800px;
+    background: #fff;
+    width: 800px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+  .containercont .text{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    /*-webkit-background-clip: text;*/
+    -webkit-text-fill-color: transparent;
+  }
+  .containercont form{
+    padding: 30px 0 0 0;
+  }
+  .containercont form .form-row{
+    display: flex;
+    margin: 32px 0;
+  }
+  form .form-row .input-data{
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+  }
+  form .form-row .textarea{
+    height: 70px;
+  }
+  .input-data input,
+  .textarea textarea{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(0,0,0, 0.12);
+  }
+  .input-data input:focus ~ label, .textarea textarea:focus ~ label,
+  .input-data input:valid ~ label, .textarea textarea:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #3498db;
+  }
+  .textarea textarea{
+    resize: none;
+    padding-top: 10px;
+  }
+  .input-data label{
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  .textarea label{
+    width: 100%;
+    bottom: 40px;
+    background: #fff;
+  }
+  .input-data .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+  }
+  .input-data .underline:before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+  .input-data input:focus ~ .underline:before,
+  .input-data input:valid ~ .underline:before,
+  .textarea textarea:focus ~ .underline:before,
+  .textarea textarea:valid ~ .underline:before{
+    transform: scale(1);
+  }
+  .submit-btn .input-data{
+    overflow: hidden;
+    height: 45px!important;
+    width: 25%!important;
+  }
+  .submit-btn .input-data .inner{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    transition: all 0.4s;
+  }
+  .submit-btn .input-data:hover .inner{
+    left: 0;
+  }
+  .submit-btn .input-data input{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+  @media (max-width: 700px) {
+    .containercont .text{
+      font-size: 30px;
+    }
+    .containercont form{
+      padding: 10px 0 0 0;
+    }
+    .containercont form .form-row{
+      display: block;
+    }
+    form .form-row .input-data{
+      margin: 35px 0!important;
+    }
+    .submit-btn .input-data{
+      width: 40%!important;
+    }
+  }
+  
