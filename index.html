@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 <title>Hospital Central da Beira</title>
+
 </head>
 
 <header>
@@ -48,19 +49,14 @@
         </div>
     </div>
     <div class="containerr">
-        <div class="box"><h6 class="flexTitle"><a href="#" class="flexlink">Medicina Legal</a></Medicina></h6><p>O Serviço de Medicina Legal
+        <div class="box" id="box1"><h6 class="flexTitle"><a href="#" class="flexlink">Medicina Legal</a><div id="fechar" align=right></div></h6><p>O Serviço de Medicina Legal
              e Seguros do Hospital Central de Maputo, 
         é um serviço com características próprias que tem por objectivo auxiliar a esfera do Direito,
-         sem a qual não se concebe uma correcta administração da Justiça. Surgiu da necessidade de solucionar questões judiciais ou<a id="lerrma" href="javascript:;" onclick="abrir('posiciona')">…Ler mais</a></p></div>
-         
-    <div id="posiciona"> 
-	    <div id="fechar" align=right><a href="javascript:fechar();">FECHAR</a></div> <p>
-	        Sou flutuante! blalalalalfasfsfslfslflsalflslflsflslflaslfslfls</p></a>
-    </div>
+         sem a qual não se concebe uma correcta administração da Justiça. Surgiu da necessidade de solucionar questões judiciais ou<a id="lerrma" >…Ler mais</a></p> </div>
 	
 
 
-        <div class="box" id="box1"><h6 class="flexTitle"><a href="#" class="flexlink">Anatomia patológica</a></h6><p>O Serviço de Anatomia Patológica 
+        <div class="box" id="box2"><h6 class="flexTitle"><a href="#" class="flexlink">Anatomia patológica</a></h6><p>O Serviço de Anatomia Patológica 
             (SAP) é responsável pela realização
              do estudo morfológico de órgãos, tecidos e células de doentes vivos  (através de amostras obtidas por biópsias, peças cirúrgicas ou colheita de células de vários tipos), ou de falecidos por doença (através da autópsia) <a href="#">…Ler mais</a></p></div>
         <div class="box"><h6 class="flexTitle"><a href="#" class="flexlink">Laboratório de análises clinicas</a></h6><p>O Laboratório de
@@ -123,16 +119,31 @@
         </div>
     </div><br><br>
    
-   
+    
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btimagens/HCB.gifn" onclick="togglePopup()"> &times</a></div>
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cum ducimus modi eligendi alias et corporis. Possimus iusto incidunt soluta eligendi doloribus ducimus fugiat quisquam id vero corporis? Necessitatibus provident animi dicta odio in architecto magni, enim ducimus, nostrum eos quia asperiores tenetur dignissimos nemo a molestiae atque cupiditate optio?</p>
+            </div>
+
     <section class="container">
-        <!--<div class ="sidenav"></div>-->
-        <div class ="item"><img class="img"  src="imagens/HCB.gif"><h2>Roupa</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nisi laboriosam debitis labore vel adipisci recusandae quod, tempore accusantium, quasi vitae nemo?</p></div>
-        <div class ="item"><img  class="img" src="imagens/Oftalmologia.gif" alt=""><h2>Alimentos</h2></div>
-        <div class ="item"><img  class="img" src="imagens/HCB.gif" alt=""><h2>Sangue</h2></div>
-        <div class ="item"><img  class="img" src="imagens/Oftalmologia.gif"  alt=""><h2>Equipamentos</h2></div>
-        <div class ="item"><img  class="img" src="imagens/HCB.gif" alt=""><p>item</p></div>
-        <div class ="item"><img  class="img" src="imagens/Oftalmologia.gif" alt=""><p>item</p></div>
-        <div class ="footer"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit a inventore sapiente doloribus iure eos dolores magnam, eveniet similique ab possimus. Perspiciatis magni inventore error sequi voluptas accusamus saepe nisi quos, impedit quas sunt, cum aperiam soluta, corporis voluptatem repudiandae suscipit iste omnis beatae reprehenderit quidem at. Vel, est numquam.</p></div>
+       
+       <div id="donate">
+            <div id="indonate">
+                <div class="indonatea" id="don1"><div id="backgroundia"><h2>Sangue</h2>
+                <p>A doação de sangue é algo muito importante para o funcionamento do hospital pois pode evitar que os doentes que necessitam de sangue esperem por alguem que</p></div></div>
+                <div class="indonateb"><div id="backgroundia"><h2>Leite Materno</h2><p>A doação do leite materno é também importante para garantir a alimentação dos bebés menores de 6 meses cuja mae não está presente ou por algum motivo não possa amamentar </p></div></div>
+                
+            </div>
+            <div id="indonate2">
+                <div class="indonate2a"><div id="backgroundia"><h2>Roupa</h2><p>A doacao de roupa é parte do departamento da ajuda humanitaria para ajudar aos mais carenciados</p></div></div>
+                <div class="indonate2b"> <div id="backgroundia"><h2>Alimentos</h2><p>A doação de alimentos pode ser tambem é feita para ajudar aos mais carenciados a conseguirem algum alimento, no entanto cada um de nos deve doar alimentos não pereciveis</p></div></div>
+            </div>
+            
+                    
+       </div>
     </section><br><br>
 
     <!--contactos part-->
@@ -176,8 +187,7 @@
   <!-- Due to more textarea tag I got an error.. SO I changed the name of texarea tag into changeit. Replace the changeit text/tag to textarea-->
               <textarea rows="8" cols="80" required></textarea> 
               <br />
-  <div class="underline">
-  </div>
+  <div class="underline"></div>
   <label for="">Write your message</label>
             
   <div class="form-row submit-btn">
@@ -200,12 +210,33 @@
                             menuArea.classList.remove("cus-nav")
                         }
                 })
+
+                var a = window.document.querySelector('#don1') 
+                    a.addEventListener('mouseover',entrar)
+                        function entrar(id){
+                        document.getElementById(Id).style.display='block'
+                    }
+
+                   // function entrar(){
+                     //   a.innerHTML.style.display="block"
+                     //   document.getElementById('backgroundia').style.display="block"
+                    //}
+
                 function abrir(id){
-                    document.getElementById(id).style.display="block";
-                }
+                    document.getElementById(id).style.display='block';
+                    a = box1.innerHTML
+                    posiciona.innerHTML = a 
+
+                    b = img.src='imagens/xout.png';
+                    getElementById('fechar') = b;
+                  }
                 function fechar(id){
                     document.getElementById("posiciona").style.display="none";
                 }
+                function togglePopup(){
+                document.getElementById("popup-1").classList.toggle("active");
+          
+        }
             </script>
         </div>
     </div>
@@ -231,7 +262,7 @@
             <div class="Cbox">
                 <h2>Address</h2>
                 <br>
-                <div class="content">
+                <div class="content11">
                     <div class="place">
                         <span class= "fas fa-map-marker-alt"></span>
                         <span class="text"> Macuti, Av.FPLM</span>
