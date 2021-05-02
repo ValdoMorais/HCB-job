@@ -7,7 +7,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: poppins;
-    background-color: rgb(248, 236, 213);
+    background-color: rgb(241, 234, 220);
 }
 h2, p{
     font-family: 'Varela Round';
@@ -206,10 +206,10 @@ div.middiv{
     width: 90%;
     height:auto;
     margin: auto;
-    background: whitesmoke;
+    background: rgba(243, 240, 240, 0.87);
     /*background-image: radial-gradient(circle at 19.75% 58.11%, #f1d65f 0, #e2db61 5.56%, #d3df66 11.11%, #c3e36c 16.67%, #b2e775 22.22%, #a0ea7f 27.78%, #8dec8b 33.33%, #78ef98 38.89%, #5ef1a6 44.44%, #3cf2b5 50%, #00f3c4 55.56%, #00f4d4 61.11%, #00f4e3 66.67%, #00f4f3 72.22%, #00f4ff 77.78%, #00f3ff 83.33%, #00f2ff 88.89%, #00f0ff 94.44%, #00eeff 100%);*/
     /*add flexbox style*/
-    background: -webkit-linear-gradient(right, #56d8e4, #e75531, #56d8e4, #ec5a35);
+   /* background: -webkit-linear-gradient(right, #56d8e4, #e75531, #56d8e4, #ec5a35);*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -230,10 +230,6 @@ div.middiv{
     font-size:50px;
     /*text-align:center;*/
     text-align: justify;
-}
-.box:hover{
-    /*background-color: rgb(84, 81, 250);*/
-    
 }
 .containerr .box p{
     font-size: 15px;
@@ -289,7 +285,8 @@ div.middiv{
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    background: -webkit-linear-gradient(right, #56d8e4, #e75531, #56d8e4, #ec5a35);
+    /*background: -webkit-linear-gradient(right, #56d8e4, #e75531, #56d8e4, #ec5a35);*/
+    
 }
 
 .card{
@@ -459,25 +456,52 @@ footer{
     flex-direction:column;
     align-items: center;
     background-color: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9) ;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     margin: auto;
+}
+
+#divdonatetable{
+    height:25%;
+    width:74%;
+   /* background-color: #e5e5f3;*/
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+}
+#divdonatetable table{
+    width: 100%;
+    
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+#divdonatetable table tr{
+background-color: wheat;
+}
+#divdonatetable table tr .th1{
+    background-color: wheat;
+    box-shadow: 5px 5px 15px rgb(0,0,0,0.9);
+
+}
+#divdonatetable table tr .th2{
+    background-color: wheat;
+    box-shadow: 5px 5px 15px rgb(0,0,0,0.9);
+
 }
 #donate{
   /* background-color: #00f3ff;*/
     height:300px;
-    width: 50%;
+    width: 70%;
     height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 #indonate{
     width: 100%;
     height: 50%;
     display: flex;
     flex-direction: row;
-
     left: 50%;
     right: 50%;
     text-align: center;
@@ -488,7 +512,6 @@ footer{
     height: 100%;
     background-image: url(imagens/HCB.gif);
     background-size: cover;
-  
 }
 .indonatea:hover{
     background: none;
@@ -514,7 +537,6 @@ footer{
     /*position: relative;
     left: 17%;*/
 }
-
 #indonate2{
     width: auto;
     height: 50%;
