@@ -392,7 +392,6 @@ footer{
 
 .content1{
     display: flex;
-<<<<<<< HEAD
     flex-direction: column;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -400,14 +399,6 @@ footer{
 }
 .container1 h3{
     align-items: center;
-=======
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-.container1 h3{
->>>>>>> 4a5129c69e8b1b336e56f76856361ade8fb0c60c
     font-size: 1,8rem;
     font-weight: 400;
     text-transform: capitalize;
@@ -419,7 +410,6 @@ footer{
     line-height: 28px;
     font-size: 14px;
 }
-<<<<<<< HEAD
 .coll{
     display: flex;
     flex-direction: row;
@@ -427,30 +417,17 @@ footer{
 }
 .social{
     max-height: 100%;
-=======
-.social{
->>>>>>> 4a5129c69e8b1b336e56f76856361ade8fb0c60c
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
     width: 50%;
     max-height: 100%;
-=======
-    margin: 1rem 0 3rem 0;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
 }
->>>>>>> 4a5129c69e8b1b336e56f76856361ade8fb0c60c
-
 .social ul li{
     margin: 0 10px;
     flex-direction: row;
 }
-<<<<<<< HEAD
 
 .social ul{
     padding-top: 5vh;
@@ -489,20 +466,6 @@ footer{
 .content11{
     font-size: 20px;
 }
-=======
-.social ul li a{
-    text-decoration: none;
-    color:white;
-
-}
-.social ul li a i{
-    font-size: 1.1rem;
-    transition: color .4s ease;
-}
-.social ul li a:hover i{
-    color: aqua;
-} 
->>>>>>> 4a5129c69e8b1b336e56f76856361ade8fb0c60c
 .footerBtn{
     background-color: black;
     width: 100%;
