@@ -9,7 +9,10 @@
     <link rel="stylesheet" type="text/css" href="HCB.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">   
+=======
+>>>>>>> 4a5129c69e8b1b336e56f76856361ade8fb0c60c
 <title>Hospital Central da Beira</title>
 
 </head>
@@ -272,6 +275,7 @@
        <div class="content1">
            <h3>Hospital Central da Beira</h3><br>
            <p>O Hospital Central da Beira (HCB) é a segunda maior unidade hospitalar de Moçambique. É a que dispõe de melhores recursos de trabalho do ponto de vista de equipamento e profissionais especializados. É, igualmente, a que recebe maior número de doentes que sofrem das mais variadas enfermidades.</p>
+<<<<<<< HEAD
             <div class="coll">
                 <div class="social">
                     <ul>
@@ -300,6 +304,11 @@
                         </div>
                     </div>
                 </div>
+=======
+
+          <div class="social">
+               
+>>>>>>> 4a5129c69e8b1b336e56f76856361ade8fb0c60c
             </div>
         </div>
         <div class="footerBtn">
